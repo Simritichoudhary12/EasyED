@@ -67,13 +67,13 @@ function Navbar() {
           showEduPlatforms ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
         }`}
       >
-        <div className="bg-[#0C0C20] text-white p-12 rounded-lg shadow-lg max-w-4xl w-full">
+        <div className="relative bg-[#0C0C20] text-white p-12 rounded-lg shadow-lg max-w-4xl w-full">
           <EduPlatforms />
           <button
-            className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out"
+            className="absolute top-4 right-4 bg-transparent text-white text-2xl font-bold focus:outline-none"
             onClick={handleAboutClick}
           >
-            Close
+            &times; {/* This is the 'X' button */}
           </button>
         </div>
       </div>
